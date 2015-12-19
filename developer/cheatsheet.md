@@ -19,3 +19,11 @@
 `<p>Card No.: {{cardNumber | myCreditCardNumberFormatter}}</p>` | 过滤器
 `<p>Employer: {{employer?.companyName}}</p>` | ？可处理employer为undefined的情况，如果为undefined，后面表达式将不再执行
 
+内置指令 | `import {NgIf, ...} from 'angular2/common';`
+-----|-----
+`<section *ngIf="showSection">` | 根据showSection的值，删除或重新生成Dom🌲的一部分
+`<li *ngFor="#item of list">` | 将li元素及其内容丢进模板中，为list中的每一个item实例化视图(上已述*号作用)
+`<div [ngSwitch]="conditionExpression">   <template [ngSwitchWhen]="case1Exp">...</template>   <template ngSwitchWhen="case2LiteralString">...</template>   <template ngSwitchDefault>...</template> </div>` | 开关指令，根据当前conditionExpression的值，选择一个模板（匹配不到则默认）
+`<div [ngClass]="{active: isActive, disabled: isDisabled}">` | 通过变量值的真假，控制css类名的开关
+
+
