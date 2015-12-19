@@ -26,4 +26,12 @@
 `<div [ngSwitch]="conditionExpression">   <template [ngSwitchWhen]="case1Exp">...</template>   <template ngSwitchWhen="case2LiteralString">...</template>   <template ngSwitchDefault>...</template> </div>` | 开关指令，根据当前conditionExpression的值，选择一个模板（匹配不到则默认）
 `<div [ngClass]="{active: isActive, disabled: isDisabled}">` | 通过变量值的真假，控制css类名的开关
 
+Form表单 | `import {FORM_DIRECTIVES} from 'angular2/common';`
+-----|-----
+`<input [(ngModel)]="userName">` | 提供数据双向绑定，解析和验证
 
+Class decorators（类的修饰器，语法糖）| `import {Directive, ...} from 'angular2/core';`
+-----|-----
+@Component({...}) class MyComponent() {} | 声明一个组件类，并提供元数据
+@Pipe({...}) class MyPipe() {} | 声明一个pipe类，并提供元数据
+@Injectable() class MyService() {} | 声明一个有依赖的类
