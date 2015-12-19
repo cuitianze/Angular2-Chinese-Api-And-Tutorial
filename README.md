@@ -9,3 +9,7 @@ Angular2中文API 教程 兼学习笔记 （Typescript版）
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;当Angular遇上Typescript，一切美好便从此开始。
 
 ------
+
+[官方quickstart](./quickstart)
+开发者指南系列
+[Angular备忘录](./develop/cheatsheet.md)
