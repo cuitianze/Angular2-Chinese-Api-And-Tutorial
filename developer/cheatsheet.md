@@ -38,5 +38,5 @@ Class decorators（类的修饰器，语法糖）| `import {Directive, ...} from
 
 指令配置 | `@Directive({ property1: value1, ... })`
 -----|-----
-selector: '.cool-button:not(a)' | 指定css选择器，模板中识别指令<可以是element(元素),`[attr]`(属性),.class,:not()>
+selector: '.cool-button:not(a)' | 指定css选择器，模板中识别指令,可以是element(元素),`[attr]`(属性),.class,:not()
 providers: [MyService, provide(...)] | 该指令的依赖Provider数组
