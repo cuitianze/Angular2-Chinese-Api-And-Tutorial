@@ -33,5 +33,10 @@ Form表单 | `import {FORM_DIRECTIVES} from 'angular2/common';`
 Class decorators（类的修饰器，语法糖）| `import {Directive, ...} from 'angular2/core';`
 -----|-----
 @Component({...}) class MyComponent() {} | 声明一个组件类，并提供元数据
-@Pipe({...}) class MyPipe() {} | 声明一个pipe类，并提供元数据
+@Pipe({...}) class MyPipe() {} | 声明一个pipe类，并提供元数据（类同angular1过滤器）
 @Injectable() class MyService() {} | 声明一个有依赖的类
+
+指令配置 | `@Directive({ property1: value1, ... })`
+-----|-----
+selector: '.cool-button:not(a)' | 指定css选择器，模板中识别指令
+providers: [MyService, provide(...)] | 该指令的依赖Provider数组
