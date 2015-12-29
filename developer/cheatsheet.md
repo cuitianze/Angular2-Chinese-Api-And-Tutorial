@@ -49,3 +49,7 @@ viewProviders: [MyService, provide(...)] | 该组件视图的依赖Provider
 directives: [MyDirective, MyComponent] | 组件模板中使用的指令
 pipes: [MyPipe, OtherPipe] | 组件模板中使用的过滤器
 
+指令和组件的类装饰器 | import {Input, ...} from 'angular2/core';
+-----|-----
+@Input() myProperty; | 声明一个input属性，可以通过属性绑定更新`<my-cmp [my-property]="someExpression">`
+@Output() myEvent = new EventEmitter(); | 声明一个output属性，通过事件绑定触发事件‵<my-cmp (my-event)="doSomething()">`
