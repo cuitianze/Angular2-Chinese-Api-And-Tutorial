@@ -40,3 +40,12 @@ Class decorators（类的修饰器，语法糖）| `import {Directive, ...} from
 -----|-----
 selector: '.cool-button:not(a)' | 指定css选择器，模板中识别指令,可以是element(元素),`[attr]`(属性),.class,:not()
 providers: [MyService, provide(...)] | 该指令的依赖Provider数组
+
+组件配置 | `@Component extends @Directive, @Component 继承自 @Directive，所以 @Directive同样适用于@Component`
+-----|-----
+viewProviders: [MyService, provide(...)] | 该组件视图的依赖Provider
+`template: 'Hello {{name}}' / templateUrl: 'my-component.html'` | 组件视图的内联/外部模板
+`styles: ['.primary {color: red}'] / styleUrls: ['my-component.css']` | 组件视图的内联/外部样式表
+directives: [MyDirective, MyComponent] | 组件模板中使用的指令
+pipes: [MyPipe, OtherPipe] | 组件模板中使用的过滤器
+
