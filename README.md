@@ -15,3 +15,6 @@ Angular2中文API 教程 兼学习笔记 （Typescript版）
 [开发者指南系列](./developer)
 - [Angular备忘录](./developer/cheatsheet.md)
 - [架构概述](./developer/overview.md)
+
+
+> *小生已转投React阵营*
